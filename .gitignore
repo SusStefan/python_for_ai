@@ -1,5 +1,7 @@
 # Ignore the output folder - we don't want to track generated data
 sales-analysis/output/
+paymaker/output/
+paymaker/input/
 # Ignore Excel temp files and python cache
 __pycache__/
 *.xlsx
