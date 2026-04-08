@@ -81,6 +81,7 @@ df = pd.DataFrame(all_data)
 # Sorting and adding totals
 df = df.sort_values("Pay Date")
 df['Total Gross YTD'] = df['Gross Pay'].cumsum()
+df['Total Tax YTD'] = df['Tax Total'].cumsum()
 df['Total Net YTD'] = df['Net Pay'].cumsum()
 print(df)
 df.to_excel(f'paymaker/output/PayStub_C_{date.today()}.xlsx',index=False)
